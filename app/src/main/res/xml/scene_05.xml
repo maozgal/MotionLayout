@@ -11,6 +11,38 @@
             motion:touchAnchorId="@+id/main_iv"
             motion:touchAnchorSide="top"
             motion:dragDirection="dragUp"/>
+
+        <KeyFrameSet>
+            <KeyPosition
+                motion:keyPositionType="parentRelative"
+                motion:percentX="0"
+                motion:framePosition="25"
+                motion:target="@id/main_iv"/>
+            <KeyPosition
+                motion:keyPositionType="parentRelative"
+                motion:percentX="1"
+                motion:framePosition="50"
+                motion:target="@id/main_iv"/>
+            <KeyPosition
+                motion:keyPositionType="parentRelative"
+                motion:percentX="0"
+                motion:framePosition="70"
+                motion:target="@id/main_iv"/>
+            <KeyAttribute
+                android:rotation="-45"
+                motion:framePosition="25"
+                motion:target="@id/main_iv" />
+            <KeyAttribute
+                android:scaleX="2"
+                android:scaleY="2"
+                android:rotation="-245"
+                motion:framePosition="50"
+                motion:target="@id/main_iv" />
+            <KeyAttribute
+                android:rotation="-445"
+                motion:framePosition="75"
+                motion:target="@id/main_iv" />
+        </KeyFrameSet>
     </Transition>
 
 
