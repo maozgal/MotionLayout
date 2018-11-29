@@ -12,14 +12,6 @@
             motion:touchAnchorSide="top"
             motion:dragDirection="dragUp"/>
 
-        <KeyFrameSet>
-            <KeyPosition
-                motion:keyPositionType="parentRelative"
-                motion:percentX="0"
-                motion:framePosition="50"
-                motion:target="@id/main_iv"/>
-
-        </KeyFrameSet>
     </Transition>
 
 
@@ -41,8 +33,9 @@
             android:layout_width="180dp"
             android:layout_height="180dp"
             android:layout_marginTop="8dp"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="parent">
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent">
 
         </Constraint>
     </ConstraintSet>
