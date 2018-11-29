@@ -15,28 +15,5 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        handleViews();
-    }
-
-    private void handleViews() {
-        animateToEndButton = findViewById(R.id.animate_to_End_bt);
-        animateToStartButton = findViewById(R.id.animate_to_start_bt);
-        mMotionLayout = findViewById(R.id.motionLayout_container);
-
-
-        animateToEndButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mMotionLayout.transitionToEnd();
-            }
-        });
-
-        animateToStartButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mMotionLayout.transitionToStart();
-            }
-        });
     }
 }
