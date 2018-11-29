@@ -7,6 +7,10 @@
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@+id/start"
         motion:duration="1000">
+        <OnSwipe
+            motion:touchAnchorId="@+id/main_iv"
+            motion:touchAnchorSide="right"
+            motion:dragDirection="dragRight" />
     </Transition>
 
 
