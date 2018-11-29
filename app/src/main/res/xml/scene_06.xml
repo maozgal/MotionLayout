@@ -16,32 +16,9 @@
             <KeyPosition
                 motion:keyPositionType="parentRelative"
                 motion:percentX="0"
-                motion:framePosition="25"
-                motion:target="@id/main_iv"/>
-            <KeyPosition
-                motion:keyPositionType="parentRelative"
-                motion:percentX="1"
                 motion:framePosition="50"
                 motion:target="@id/main_iv"/>
-            <KeyPosition
-                motion:keyPositionType="parentRelative"
-                motion:percentX="0"
-                motion:framePosition="70"
-                motion:target="@id/main_iv"/>
-            <KeyAttribute
-                android:rotation="-45"
-                motion:framePosition="25"
-                motion:target="@id/main_iv" />
-            <KeyAttribute
-                android:scaleX="2"
-                android:scaleY="2"
-                android:rotation="-245"
-                motion:framePosition="50"
-                motion:target="@id/main_iv" />
-            <KeyAttribute
-                android:rotation="-445"
-                motion:framePosition="75"
-                motion:target="@id/main_iv" />
+
         </KeyFrameSet>
     </Transition>
 
@@ -53,7 +30,6 @@
             android:layout_height="180dp"
             android:layout_marginBottom="8dp"
             motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintEnd_toEndOf="parent">
 
         </Constraint>
@@ -65,7 +41,6 @@
             android:layout_width="180dp"
             android:layout_height="180dp"
             android:layout_marginTop="8dp"
-            motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintTop_toTopOf="parent">
 
