@@ -28,14 +28,14 @@ public class MainActivity extends AppCompatActivity {
         animateToEndButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                mMotionLayout.transitionToEnd();
             }
         });
 
         animateToStartButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                mMotionLayout.transitionToStart();
             }
         });
     }
