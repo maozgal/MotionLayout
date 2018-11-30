@@ -7,16 +7,20 @@
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@+id/start"
         motion:duration="1000">
-        <OnSwipe
-            motion:touchAnchorId="@+id/main_iv"
-            motion:touchAnchorSide="top"
-            motion:dragDirection="dragUp"/>
-
+        <KeyFrameSet>
+            <KeyPosition
+                motion:keyPositionType="parentRelative"
+                motion:percentY="0.5"
+                motion:pathMotionArc="flip"
+                motion:framePosition="50"
+                motion:target="@id/main_iv"/>
+        </KeyFrameSet>
     </Transition>
 
 
     <ConstraintSet android:id="@+id/start">
         <Constraint
+            motion:pathMotionArc="startHorizontal"
             android:id="@+id/main_iv"
             android:layout_width="180dp"
             android:layout_height="180dp"
@@ -33,9 +37,8 @@
             android:layout_width="180dp"
             android:layout_height="180dp"
             android:layout_marginTop="8dp"
-            motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
-            motion:layout_constraintBottom_toBottomOf="parent">
+            motion:layout_constraintStart_toStartOf="parent">
 
         </Constraint>
     </ConstraintSet>
