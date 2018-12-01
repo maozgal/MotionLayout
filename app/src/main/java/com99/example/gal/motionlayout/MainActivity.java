@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.SeekBar;
 
 public class MainActivity extends AppCompatActivity {
     MotionLayout mMotionLayout;
@@ -20,22 +21,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void handleViews() {
-        animateToEndButton = findViewById(R.id.animate_to_End_bt);
-        animateToStartButton = findViewById(R.id.animate_to_start_bt);
         mMotionLayout = findViewById(R.id.motionLayout_container);
-
-
-        animateToEndButton.setOnClickListener(new View.OnClickListener() {
+        SeekBar seekBar = findViewById(R.id.seek);
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
-            public void onClick(View v) {
-                mMotionLayout.transitionToEnd();
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                mMotionLayout.setProgress(i / 100f);
             }
-        });
 
-        animateToStartButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                mMotionLayout.transitionToStart();
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
             }
         });
     }
