@@ -6,8 +6,9 @@
     android:id="@+id/motionLayout_container"
     android:background="#ffffff"
     android:layout_width="match_parent"
-    app:layoutDescription="@xml/scene_05"
+    app:layoutDescription="@xml/scene_06"
     android:layout_height="match_parent"
+    app:showPaths="true"
     tools:context=".MainActivity">
 
 
@@ -17,5 +18,26 @@
         android:layout_width="64dp"
         android:layout_height="64dp"/>
 
+    <Button
+        android:id="@+id/animate_to_start_bt"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:text="Animate To Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/animate_to_End_bt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/animate_to_End_bt"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:text="Animate To End"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/animate_to_start_bt"/>
 
 </android.support.constraint.motion.MotionLayout>
