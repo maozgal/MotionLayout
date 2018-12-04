@@ -22,21 +22,16 @@ public class MainActivity extends AppCompatActivity {
 
     private void handleViews() {
         mMotionLayout = findViewById(R.id.motionLayout_container);
-        SeekBar seekBar = findViewById(R.id.seek);
-        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        findViewById(R.id.button_end).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                mMotionLayout.setProgress(i / 100f);
+            public void onClick(View view) {
+                mMotionLayout.transitionToEnd();
             }
-
+        });
+        findViewById(R.id.button_start).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
+            public void onClick(View view) {
+                mMotionLayout.transitionToStart();
             }
         });
     }

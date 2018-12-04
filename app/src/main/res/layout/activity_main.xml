@@ -4,25 +4,201 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/motionLayout_container"
-    android:background="#ffffff"
     android:layout_width="match_parent"
-    app:showPaths="true"
-    app:layoutDescription="@xml/scene_06"
     android:layout_height="match_parent"
+    app:layoutDescription="@xml/scene_06"
     tools:context=".MainActivity">
 
-
-    <android.support.constraint.utils.ImageFilterView
-        android:id="@+id/main_iv"
-        android:src="@drawable/icon2"
-        android:layout_width="64dp"
-        android:layout_height="64dp"/>
-
-    <android.support.v7.widget.AppCompatSeekBar
-        android:id="@+id/seek"
+    <View
+        android:id="@+id/back_g"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/sun"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/sun"/>
+
+    <ImageView
+        android:id="@+id/cloud1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/cloud"/>
+
+    <ImageView
+        android:id="@+id/cloud2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/cloud"/>
+
+    <ImageView
+        android:id="@+id/cloud3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/cloud"/>
+
+    <View
+        android:id="@+id/l_g"
+        android:layout_width="15dp"
+        android:layout_height="100dp"
+        android:background="#02a337"/>
+
+    <!--leafs-->
+    <View
+        android:id="@+id/l1"
+        android:layout_width="15dp"
+        android:layout_height="100dp"
+        android:background="#fc3559"
+        android:transformPivotX="7dp"
+        android:transformPivotY="100dp"/>
+
+    <View
+        android:id="@+id/l2"
+        android:layout_width="15dp"
+        android:layout_height="100dp"
+        android:background="#fc3559"
+        android:transformPivotX="7dp"
+        android:transformPivotY="100dp"/>
+
+    <View
+        android:id="@+id/l3"
+        android:layout_width="15dp"
+        android:layout_height="100dp"
+        android:background="#fc3559"
+        android:transformPivotX="7dp"
+        android:transformPivotY="100dp"/>
+
+    <View
+        android:id="@+id/l4"
+        android:layout_width="15dp"
+        android:layout_height="100dp"
+        android:background="#fc3559"
+        android:transformPivotX="7dp"
+        android:transformPivotY="100dp"/>
+
+    <View
+        android:id="@+id/l5"
+        android:layout_width="15dp"
+        android:layout_height="100dp"
+        android:background="#fc3559"
+        android:transformPivotX="7dp"
+        android:transformPivotY="100dp"/>
+
+    <View
+        android:id="@+id/l6"
+        android:layout_width="15dp"
+        android:layout_height="100dp"
+        android:background="#fc3559"
+        android:transformPivotX="7dp"
+        android:transformPivotY="100dp"/>
+
+    <View
+        android:id="@+id/l7"
+        android:layout_width="15dp"
+        android:layout_height="100dp"
+        android:background="#fc3559"
+        android:transformPivotX="7dp"
+        android:transformPivotY="100dp"/>
+
+    <View
+        android:id="@+id/l8"
+        android:layout_width="15dp"
+        android:layout_height="100dp"
+        android:background="#fc3559"
+        android:transformPivotX="7dp"
+        android:transformPivotY="100dp"/>
+
+    <View
+        android:id="@+id/l9"
+        android:layout_width="15dp"
+        android:layout_height="100dp"
+        android:background="#fc3559"
+        android:transformPivotX="7dp"
+        android:transformPivotY="100dp"/>
+
+    <View
+        android:id="@+id/l10"
+        android:layout_width="15dp"
+        android:layout_height="100dp"
+        android:background="#fc3559"
+        android:transformPivotX="7dp"
+        android:transformPivotY="100dp"/>
+
+    <View
+        android:id="@+id/l11"
+        android:layout_width="15dp"
+        android:layout_height="100dp"
+        android:background="#fc3559"
+        android:transformPivotX="7dp"
+        android:transformPivotY="100dp"/>
+
+    <View
+        android:id="@+id/l12"
+        android:layout_width="15dp"
+        android:layout_height="100dp"
+        android:background="#fc3559"
+        android:transformPivotX="7dp"
+        android:transformPivotY="100dp"/>
+
+    <View
+        android:id="@+id/circle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/circle"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="10dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"
+        />
+
+    <ImageView
+        android:id="@+id/leaf1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/leaf1"/>
+
+    <ImageView
+        android:id="@+id/leaf2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/leaf2"/>
+
+    <ImageView
+        android:id="@+id/leaf3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/leaf1"/>
+
+
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_end"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/button_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_start"/>
+
 
 </android.support.constraint.motion.MotionLayout>
