@@ -11,6 +11,7 @@
 
     <View
         android:id="@+id/back_g"
+        android:background="#35e8fc"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

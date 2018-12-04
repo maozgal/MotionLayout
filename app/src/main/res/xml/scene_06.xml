@@ -54,6 +54,77 @@
                 motion:framePosition="50"
                 motion:keyPositionType="parentRelative"
                 motion:percentY="0"/>
+
+            <KeyPosition
+                motion:target="@id/leaf2"
+                motion:framePosition="25"
+                motion:keyPositionType="parentRelative"
+                motion:percentY="0"
+                motion:percentX="0.5"
+                />
+            <KeyPosition
+                motion:target="@id/leaf2"
+                motion:framePosition="50"
+                motion:keyPositionType="parentRelative"
+                motion:percentY="0.5"
+                motion:percentX="0.1"
+                />
+            <KeyPosition
+                motion:target="@id/leaf2"
+                motion:framePosition="75"
+                motion:keyPositionType="parentRelative"
+                motion:percentY="0.2"
+                motion:percentX="0.8"
+                />
+            <KeyPosition
+                motion:target="@id/leaf2"
+                motion:framePosition="85"
+                motion:keyPositionType="parentRelative"
+                motion:percentY="0.1"
+                motion:percentX="0.2"
+                />
+            <KeyPosition
+                motion:target="@id/leaf3"
+                motion:framePosition="50"
+                motion:keyPositionType="parentRelative"
+                motion:percentY="0.5"
+                motion:percentX="0.1"
+                />
+            <KeyPosition
+                motion:target="@id/leaf3"
+                motion:framePosition="75"
+                motion:keyPositionType="parentRelative"
+                motion:percentY="0.2"
+                motion:percentX="0.8"
+                />
+            <KeyPosition
+                motion:target="@id/leaf3"
+                motion:framePosition="85"
+                motion:keyPositionType="parentRelative"
+                motion:percentY="0.1"
+                motion:percentX="0.2"
+                />
+            <KeyPosition
+                motion:target="@id/leaf1"
+                motion:framePosition="50"
+                motion:keyPositionType="parentRelative"
+                motion:percentY="0.3"
+                motion:percentX="0.2"
+                />
+            <KeyPosition
+                motion:target="@id/leaf1"
+                motion:framePosition="75"
+                motion:keyPositionType="parentRelative"
+                motion:percentY="0.3"
+                motion:percentX="0.7"
+                />
+            <KeyPosition
+                motion:target="@id/leaf1"
+                motion:framePosition="85"
+                motion:keyPositionType="parentRelative"
+                motion:percentY="0.15"
+                motion:percentX="0.25"
+                />
         </KeyFrameSet>
     </Transition>
 
@@ -256,7 +327,7 @@
             motion:layout_constraintStart_toEndOf="parent"/>
         <Constraint
             android:id="@+id/leaf1"
-            android:layout_width="wrap_content"
+            android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginTop="100dp"
             android:layout_marginStart="200dp"
@@ -264,7 +335,7 @@
             motion:layout_constraintStart_toEndOf="parent"/>
         <Constraint
             android:id="@+id/leaf2"
-            android:layout_width="wrap_content"
+            android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginTop="100dp"
             android:layout_marginStart="100dp"
@@ -272,7 +343,7 @@
             motion:layout_constraintStart_toEndOf="parent"/>
         <Constraint
             android:id="@+id/leaf3"
-            android:layout_width="wrap_content"
+            android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginTop="50dp"
             android:layout_marginStart="200dp"
@@ -496,15 +567,16 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:rotation="-720"
-            motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintEnd_toStartOf="parent"/>
+            motion:layout_constraintBottom_toBottomOf="@+id/guideline"
+            motion:layout_constraintEnd_toStartOf="parent"
+            />
         <Constraint
             android:id="@+id/leaf3"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:rotation="120"
             android:layout_marginBottom="100dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/guideline"
+            motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toStartOf="parent"/>
         <Constraint
             android:id="@+id/back_g"
